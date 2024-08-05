@@ -1,0 +1,32 @@
+.sustainability-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    box-shadow: 0 20px 20px #CD7F32;
+    background: lemonchiffon;
+    font-weight: bolder;
+    text-justify: auto;
+    text-decoration: solid;
+    text-align: center;
+  }
+  
+  .sustainability-icon {
+    font-size: 2rem;
+    color: #4caf50; /* Green color for sustainability */
+    margin-right: 15px;
+  }
+  
+  .sustainability-content {
+    flex: 1;
+  }
+  
+  .sustainability-content h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .sustainability-content p {
+    margin: 0;
+  }
+  

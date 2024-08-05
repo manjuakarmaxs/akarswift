@@ -1,0 +1,53 @@
+/* Careers.css */
+.icon-large {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .panel {
+    /* border: 10px solid bisque; */
+    border-radius: 40px;
+    /* background-color: #fff; */
+
+    box-shadow: 0 20px 20px #CD7F32;
+    background: lemonchiffon;
+    font-weight: bolder;
+    
+  }
+  
+  .panel-body h5 {
+    margin-bottom: 10px;
+  }
+  
+  .panel-body p {
+    margin: 0;
+  }
+  
+  .timeline-item {
+    background: lemonchiffon;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    position: relative;
+    
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  .timeline-item h5 {
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,76 @@
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.relative-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Greeting Styles */
+.greeting {
+  text-align: center;
+  font-size: 3rem; /* Adjusted to use rem units */
+  font-weight: bold;
+  color: #CD7F32; /* Adjust color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for special effect */
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  margin: 2rem auto; /* Center the greeting */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+/* Text Overlay Styles */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Responsive font size */
+  text-align: justify;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Added background to improve readability */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Responsive width */
+  max-width: 600px; /* Maximum width for larger screens */
+  min-width: 200px; /* Minimum width for smaller screens */
+  z-index: 5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .text-overlay {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+    font-size: 0.75rem; /* Further adjust font size for small screens */
+    padding: 0.75rem; /* Further adjust padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+    font-size: 0.625rem; /* Further adjust font size for very small screens */
+    padding: 0.5rem; /* Further adjust padding for very small screens */
+  }
+}
