@@ -10,9 +10,11 @@ import Careers from './component/Careers';
 import Contact from './component/ContactUs';
 import Footer from './component/Footer'
 import ScrollTopButton from './component/ScrollTopButton';
+
 const App = () => {
   return (
     <div>
+    
       <Header />
       <div id="home"><Home /></div>
       <div id="about"><About /></div>

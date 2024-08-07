@@ -28,6 +28,16 @@
   z-index: 1;
 }
 
+
+ 
+.logo {
+  height: 60px; /* Adjust the height as needed */
+  vertical-align: middle;
+  margin-right: 15px; /* Spacing between logo and text */
+}
+
+
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .nav-link, .navbar-brand {

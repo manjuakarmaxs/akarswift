@@ -10,7 +10,7 @@ const Header = () => {
    <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: 'black', fontWeight: 'bolder' }}>    
    <div className="container-fluid">
    {/* radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(216,148,233,1) 100%) */}
-        <img src={logo}  alt="Company Logo" className="marquee-logo" />
+        <img src={logo}  alt="Company Logo" className="logo" />
 
        
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

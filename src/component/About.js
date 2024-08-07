@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../component/About.css';
 
 import ourstory from '../assets/ourstory.jpg';
-import vision from '../assets/vision.jpg'
+import vision from '../assets/v1.png'
 import corevalues from '../assets/corevalues.jpg'
-import mission from '../assets/mission.png'
+import mission from '../assets/m1.png'
 
 
 const About = () => {
@@ -35,18 +35,18 @@ const About = () => {
             <div className="w-50 p-4 text-right text-container">
               <h1 className="card-title">Our Vision</h1>
               <h3 className="card-text">
-                To be the foremost global trading partner, known for our commitment to excellence and sustainability.
+              To be the foremost global trading partner, known for our commitment to excellence and sustainability. At Akarswift Global Pvt Ltd, we envision a future where international trade is seamless, efficient, and sustainable, creating value for businesses and communities around the world.
               </h3>
             </div>
           </div>
         </div>
         <div className="carousel-item">
           <div className="d-flex align-items-center">
-            <img src={mission} className="d-block w-50" alt="Our Mission" />
+            <img src={mission} className="d-block w-51" alt="Our Mission" />
             <div className="w-50 p-4 text-right text-container">
               <h1 className="card-title">Our Mission</h1>
               <h3 className="card-text">
-                To facilitate global trade by providing exceptional import and export services that exceed our clients' expectations.
+              To facilitate global trade by providing exceptional import and export services that exceed our clients' expectations. At Akarswift Global Pvt Ltd, we are committed to bridging markets and fostering international business relationships that drive growth and innovation.
               </h3>
             </div>
           </div>
@@ -57,10 +57,7 @@ const About = () => {
             <div className="w-50 p-4 text-right text-container">
               <h1 className="card-title">Core Values</h1>
               <h3 className="card-text">
-                - Integrity: Upholding the highest standards of honesty and fairness.<br />
-                - Excellence: Striving for perfection in every transaction.<br />
-                - Sustainability: Promoting eco-friendly practices in global trade.<br />
-                - Innovation: Continuously evolving to meet the dynamic needs of the global market.
+              We are committed to upholding the highest standards of honesty and fairness, ensuring integrity in every aspect of our operations. Striving for perfection in every transaction, we pursue excellence with unwavering dedication. Our commitment to sustainability drives us to promote eco-friendly practices in global trade, ensuring a positive impact on the environment.
               </h3>
             </div>
           </div>

@@ -3,6 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../component/Sustainability.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 const Sustainability = () => {
   return (
     <div className="container my-5">
@@ -49,9 +53,9 @@ const Sustainability = () => {
         <div className="row g-4">
           <div className="col-md-6 d-flex align-items-stretch">
             <div className="sustainability-item card w-100 d-flex flex-column">
-              <div className="sustainability-icon card-header">
-              <i className="bi bi-plant"></i>
-              </div>
+            <div className="sustainability-icon card-header">
+              <i className="fas fa-leaf"></i>
+            </div>
               <div className="sustainability-content card-body flex-grow-1">
                 <h5 className="card-title">Sustainable Sourcing</h5>
                 <p className="card-text">

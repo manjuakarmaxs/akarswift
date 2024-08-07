@@ -2,12 +2,16 @@
     width: 100%; /* Adjust to fit your layout */
     overflow: hidden;
     white-space: nowrap;
-    background-color:  #CD7F32 /* Optional: background color */
+    background-color:  black ;/* Optional: background color */
+    vertical-align: middle;
   }
   
   .marquee-content {
+    vertical-align: middle;
     display: inline-block;
     animation: marquee 10s linear infinite;
+    color: white;
+    font-weight: bold;
   }
   
   .marquee-logo {
