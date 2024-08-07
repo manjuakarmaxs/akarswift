@@ -6,11 +6,11 @@
   
   .panel {
     /* border: 10px solid bisque; */
-    border-radius: 40px;
+    border-radius: 20px;
     /* background-color: #fff; */
 
-    box-shadow: 0 20px 20px #CD7F32;
-    background: lemonchiffon;
+    /* box-shadow: 0 20px 20px #ecf0f1;; */
+    background: #ecf0f1;;
     font-weight: bolder;
     
   }
@@ -24,7 +24,7 @@
   }
   
   .timeline-item {
-    background: lemonchiffon;
+    background: #ecf0f1;;
     border-left: 4px solid #007bff;
     padding-left: 15px;
     position: relative;

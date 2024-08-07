@@ -1,98 +1,102 @@
-  @keyframes float1 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+/* About.css */
+
+.text-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Light background for better text readability */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px;
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensures the image covers its container */
+  height: 400px; /* Consistent height for all images */
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.carousel-inner {
+  max-width: 1000px;
+  margin: auto; /* Center the carousel in the container */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: black; /* Change to your desired color */
+}
+
+.carousel-indicators .active {
+  background-color: blueviolet; /* Change to a darker shade if desired */
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .carousel-item img {
+    height: 300px; /* Reduce height for smaller screens */
   }
-  
-  @keyframes float2 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+
+  .card-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
-  
-  @keyframes float3 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+
+  .card-text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
-  
-  .float1 {
-    animation: float1 3s ease-in-out infinite;
+
+  .text-container {
+    padding: 10px; /* Reduce padding for smaller screens */
   }
-  
-  .float2 {
-    animation: float2 4s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px; /* Further reduce height for very small screens */
   }
-  
-  .float3 {
-    animation: float3 5s ease-in-out infinite;
+
+  .card-title {
+    font-size: 1.2rem; /* Adjust font size for very small screens */
   }
-  
- 
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
-    font-weight: bolder;
-    text-decoration: solid;
-    /* box-shadow: 0 20px 20px #CD7F32; */
-    background: lemonchiffon;
-   
+
+  .card-text {
+    font-size: 0.9rem; /* Adjust font size for very small screens */
   }
-  
-  .card:hover {
-   
-    /* box-shadow: 0 20px 20px #CD7F32; */
-    background: lemonchiffon;
-    font-weight: bolder;
-    text-decoration: solid;
-  
+
+  .text-container {
+    padding: 5px; /* Further reduce padding for very small screens */
   }
-    
 
-  
-  .card .card-body {
-    position: relative;
-    z-index: 1;   
-    /* box-shadow: 0 20px 20px #CD7F32; */
-    background: lemonchiffon;
-    font-weight: bolder;
-    text-decoration: solid;
-   
+  .carousel-item .d-flex {
+    flex-direction: column; /* Stack image and text vertically */
   }
-  
 
+  .carousel-item img {
+    width: 100%; /* Ensure the image takes up full width */
+  }
 
- 
+  .text-container {
+    width: 100%; /* Ensure the text container takes up full width */
+    margin-top: 10px; /* Add some space between image and text */
+  }
+}
 
+/* Ensure text-container always has sufficient margin from the image on larger screens */
+@media (min-width: 992px) {
+  .carousel-item .d-flex {
+    align-items: center;
+  }
 
+  .carousel-item img {
+    margin-right: 20px; /* Maintain gap between image and text */
+  }
 
-
-
-
-
+  .text-container {
+    margin-top: 0; /* Remove top margin on larger screens */
+  }
+}

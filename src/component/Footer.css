@@ -1,0 +1,128 @@
+
+
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+.footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure footer content does not obscure the button */
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.footer-content .container{
+    background: black;
+}
+  
+  .footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .footer .nav-link {
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .nav-link:hover {
+    color: #fff;
+  }
+  
+  .footer .list-unstyled li {
+    margin-bottom: 0px;
+  }
+  
+  .footer .d-flex a {
+    color: #aaa;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .d-flex a:hover {
+    color: #fff;
+  }
+  
+  .footer .text-center p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+  
+  .footer .social-icons a {
+    color: #aaa;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #fff;
+  }
+  
+  .footer .row-divider {
+    border-top: 2px solid #444;
+    margin: 20px 0;
+  }
+  
+  .footer .overlay {
+    content: "";
+    /* background: rgba(255, 255, 255, 0.05); */
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+  
+    .footer .col-md-4 {
+      margin-bottom: 20px;
+    }
+  
+    .footer .d-flex {
+      justify-content: center;
+    }
+  }
+  
+
+  .footer-links{
+    text-decoration: none;
+    color: white;
+    cursor: 'pointer'
+  }
+
+
+  .footer-links:hover{
+    text-decoration: none;
+    color: blueviolet;
+    cursor: 'pointer'
+  }

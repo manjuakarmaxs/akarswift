@@ -1,18 +1,25 @@
 .accordion-button {
-  background-color:#CD7F32; /* Change the background color */
-  color: #fff; /* Change the text color */
-  border-color: #007bff; /* Change the border color */
+  background-color:#ecf0f1;; /* Change the background color */
+  color: black; /* Change the text color */
+  border-color: aliceblue; /* Change the border color */
 }
 
 /* Style for the accordion button when it is active (expanded) */
 .accordion-button:not(.collapsed) {
-  background-color: #0056b3; /* Change the background color when expanded */
-  color: #fff; /* Change the text color when expanded */
-  border-color: #0056b3; /* Change the border color when expanded */
+  background-color: aliceblue; /* Change the background color when expanded */
+  color: black; /* Change the text color when expanded */
+  border-color: aliceblue; /* Change the border color when expanded */
 }
 
 /* Style for the accordion button on hover */
 .accordion-button:hover {
-  background-color: #0056b3; /* Change the background color on hover */
-  color: #fff; /* Change the text color on hover */
+  background-color: aliceblue; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
 }
+
+
+.card-body ,p ,ul {
+  font-weight: 400;
+}
+
+

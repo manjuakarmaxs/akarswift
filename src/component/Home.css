@@ -1,76 +1,91 @@
-/* Container Styles */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
+/* General Styles */
 .relative-container {
   position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  z-index: -1; /* Ensure video is behind text */
 }
 
-/* Greeting Styles */
-.greeting {
-  text-align: center;
-  font-size: 3rem; /* Adjusted to use rem units */
-  font-weight: bold;
-  color: #CD7F32; /* Adjust color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for special effect */
-  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-  padding: 1rem;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 700px;
-  margin: 2rem auto; /* Center the greeting */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 10; /* Ensure it is above other elements */
-}
-
-/* Text Overlay Styles */
 .text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
+  z-index: 1;
   font-weight: bolder;
-  font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Responsive font size */
   text-align: justify;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5); /* Added background to improve readability */
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  width: 80%; /* Responsive width */
-  max-width: 600px; /* Maximum width for larger screens */
-  min-width: 200px; /* Minimum width for smaller screens */
-  z-index: 5;
+  padding: 1rem; /* Add padding to ensure text does not touch the edges */
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 20px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+.mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .mission h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .mission p {
+    font-size: 1.125rem; /* Adjust font size for smaller screens */
+    max-width: 90%; /* Reduce max-width for better fit */
+  }
+
   .text-overlay {
-    font-size: 0.875rem; /* Adjust font size for smaller screens */
-    padding: 1rem; /* Adjust padding for smaller screens */
+    padding: 0.75rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .mission h2 {
+    font-size: 1.75rem; /* Further reduce font size for tablets */
+  }
+
+  .mission p {
+    font-size: 1rem; /* Further reduce font size for tablets */
+    max-width: 95%; /* Increase max-width for tablets */
+  }
+
+  .text-overlay {
+    padding: 0.5rem; /* Further reduce padding */
   }
 }
 
 @media (max-width: 768px) {
-  .text-overlay {
-    font-size: 0.75rem; /* Further adjust font size for small screens */
-    padding: 0.75rem; /* Further adjust padding for small screens */
+  .mission h2 {
+    font-size: 1.5rem; /* Reduce font size for mobile devices */
   }
-}
 
-@media (max-width: 480px) {
+  .mission p {
+    font-size: 0.875rem; /* Reduce font size for mobile devices */
+    max-width: 100%; /* Ensure text takes up full width */
+  }
+
   .text-overlay {
-    font-size: 0.625rem; /* Further adjust font size for very small screens */
-    padding: 0.5rem; /* Further adjust padding for very small screens */
+    padding: 0.25rem; /* Minimal padding on small screens */
+    width: 90%; /* Ensure the overlay takes up most of the screen width */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
 }

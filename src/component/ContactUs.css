@@ -1,27 +1,29 @@
+.container {
+  background: linear-gradient(135deg, #f0f0f0 0%, #d1e8e4 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  
-  /* Contact Details */
-  .contact-details {
-    box-shadow: 0 20px 20px #CD7F32;
-    background: lemonchiffon;
-    font-weight: bolder;
-    text-justify: auto;
-    text-decoration: solid;
-    text-align: center;
+.form-label {
+  font-weight: bold;
+}
 
-  }
-  
-  
-  .contact-details ul li {
-    margin-bottom: 1rem;
-  }
-  
+#email-error {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
 
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .contact-details,
-    .contact-form {
-      padding: 15px;
-    }
-  }
-  
+button.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #45a049;
+}
