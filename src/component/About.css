@@ -1,17 +1,26 @@
 /* About.css */
 
 .text-container {
-  background-color: rgba(255, 255, 255, 0.85); /* Light background for better text readability */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
   border-radius: 8px; /* Rounded corners */
-  font-weight:bold;
+  font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 15px;
+  padding: 20px; /* Increase padding for better spacing */
+  color: white; /* White text color for contrast */
+  text-align: center; /* Center align text */
+  max-width: 600px; /* Set a max-width for the text container */
+  margin: 0 auto; /* Center the container */
 }
 
 .carousel-item img {
   object-fit: cover; /* Ensures the image covers its container */
   height: 400px; /* Consistent height for all images */
+  width: 100%; /* Ensure the image takes up full width */
+
+  
 }
+
+
 
 .card-title {
   font-size: 2rem;
@@ -22,7 +31,6 @@
 .card-text {
   font-size: 1.2rem;
   line-height: 1.5;
-  text-align: justify;
 }
 
 .carousel-inner {
@@ -53,7 +61,7 @@
   }
 
   .text-container {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
   }
 }
 
@@ -71,15 +79,11 @@
   }
 
   .text-container {
-    padding: 5px; /* Further reduce padding for very small screens */
+    padding: 10px; /* Further reduce padding for very small screens */
   }
 
   .carousel-item .d-flex {
     flex-direction: column; /* Stack image and text vertically */
-  }
-
-  .carousel-item img {
-    width: 100%; /* Ensure the image takes up full width */
   }
 
   .text-container {
@@ -102,3 +106,13 @@
     margin-top: 0; /* Remove top margin on larger screens */
   }
 }
+
+
+
+
+
+
+
+
+
+

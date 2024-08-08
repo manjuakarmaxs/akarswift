@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.jpg';
-import Marque1 from './Marque1';
+// import Marque1 from './Marque1';
 import { Link } from 'react-scroll'; // Install react-scroll for smooth scrolling
 import './Header.css'
 

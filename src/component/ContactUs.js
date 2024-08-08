@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react';
 import '../component/ContactUs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from 'emailjs-com';
 
 const ContactUs = () => {
   const regx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const [email, setEmail] = useState('');
+  const [setEmail] = useState('');
   const [error, setError] = useState('');
   const [buttonText, setButtonText] = useState('Send Message');
   
