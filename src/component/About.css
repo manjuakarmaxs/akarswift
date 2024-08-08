@@ -1,5 +1,7 @@
 /* About.css */
 
+
+
 .text-container {
   background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
   border-radius: 8px; /* Rounded corners */
@@ -31,6 +33,7 @@
 .card-text {
   font-size: 1.2rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .carousel-inner {

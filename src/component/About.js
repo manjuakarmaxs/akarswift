@@ -9,26 +9,17 @@ import mission from '../assets/mission.png';
 
 const About = () => {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+    <div className="container my-5 ">
+    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" >
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <div className="carousel-inner container">
+      <div className="carousel-inner  ">
+       
         <div className="carousel-item active">
-          <div className="d-flex flex-column flex-lg-row align-items-center">
-            <img src={ourstory} className="d-block w-100 w-lg-50" alt="Our Story" />
-            <div className="p-4 text-container">
-              <h1 className="card-title">Our Story</h1>
-              <h3 className="card-text">
-                Founded under the robust legal framework of Karnataka, India, Akarswift Global Pvt Ltd stands as a beacon of trust and efficiency in the realm of international trade. With a vision to connect the world through seamless trade, we have built a legacy of reliability, integrity, and innovation.
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
           <div className="d-flex flex-column flex-lg-row align-items-center">
             <img src={vision} className="d-block w-100 w-lg-50 " alt="Our Vision" />
             
@@ -51,6 +42,27 @@ const About = () => {
             </div>
           </div>
         </div>
+
+
+
+
+            <div className="carousel-item">
+           <div className="d-flex flex-column flex-lg-row align-items-center">
+            <img src={ourstory} className="d-block w-100 w-lg-50" alt="Our Story" />
+            <div className="p-4 text-container">
+              <h1 className="card-title">Our Story</h1>
+              <h3 className="card-text">
+                Founded under the robust legal framework of Karnataka, India, Akarswift Global Pvt Ltd stands as a beacon of trust and efficiency in the realm of international trade. With a vision to connect the world through seamless trade, we have built a legacy of reliability, integrity, and innovation.
+              </h3>
+            </div>
+          </div> 
+        </div> 
+
+
+
+
+
+
         <div className="carousel-item">
           <div className="d-flex flex-column flex-lg-row align-items-center">
             <img src={corevalues} className="d-block w-100 w-lg-50" alt="Core Values" />
@@ -71,6 +83,7 @@ const About = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 };

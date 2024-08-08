@@ -27,7 +27,7 @@
   font-weight: bolder;
   text-align: justify;
   padding: 1rem; /* Add padding to ensure text does not touch the edges */
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.3); 
   border-radius: 20px;
 }
 

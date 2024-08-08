@@ -36,7 +36,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-5" style={{color:'white'}}>
       <h2 className="text-center mb-4">Contact Us</h2>
       <div className="row justify-content-center">
         <div className="col-lg-6">

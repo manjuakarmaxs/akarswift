@@ -17,7 +17,7 @@ const Service = () => {
     <>
       <div className="container my-5">
         <center>
-          <h1 data-aos="fade-up"><b>Service</b></h1>
+          <h1 data-aos="fade-up" ><b style={{color:'white'}}>Service</b></h1 >
         </center>
         <div className="row g-3">
           <div className="col-md-4" data-aos="fade-up">
@@ -25,7 +25,7 @@ const Service = () => {
               <div className="card-body">
                 <h5 className="card-title">Comprehensive Trade Solutions</h5>
                 <p className="card-text">
-                  At Akarswift Global, we offer a wide array of services tailored to meet the unique needs of our diverse clientele. Our expertise spans across various industries, ensuring that your goods reach their destination safely and efficiently.
+                At Akarswift Global, we offer a wide array of services tailored to meet the unique needs of our diverse clientele. Our expertise spans across various industries, ensuring that your goods reach their destination safely and efficiently.
                 </p>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Service = () => {
               <div className="card-body">
                 <h5 className="card-title">Export Services</h5>
                 <p className="card-text">
-                  At Akarswift Global Pvt Ltd, we specialize in providing top-notch export services that are tailored to meet the diverse needs of our clients. Our goal is to facilitate a seamless export process, ensuring that your products arrive at their international destinations efficiently and in optimal condition.
+                  At Akarswift Global Pvt Ltd, we specialize in providing top-notch export services that are tailored to meet the diverse needs of our clients.suring that your products arrive at their international destinations efficiently and in optimal condition.
                 </p>
               </div>
             </div>

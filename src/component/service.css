@@ -11,10 +11,13 @@
   
 }
 body{
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color:beige ;
 }
 
-
+.h1{
+   text-decoration-color: white;
+}
 
 .card-title{ 
   font-size: larger;
@@ -24,6 +27,7 @@ body{
 
 .card-text{
   font-weight: 400;
+  font-size: 16px;
 }
 
 .card-body:hover{

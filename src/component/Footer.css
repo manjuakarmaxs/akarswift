@@ -1,23 +1,15 @@
 
-
-.footer {
-    background: black;
-    color: white;
-    padding: 40px 0;
-    position: relative;
-    overflow: hidden;
-  }
 .footer {
   background: black;
   color: white;
   padding: 40px 0;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
 /* Ensure footer content does not obscure the button */
 .footer-content {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
 
@@ -45,6 +37,7 @@
   
   .footer .nav-link:hover {
     color: #fff;
+    color: blueviolet;
   }
   
   .footer .list-unstyled li {
@@ -58,7 +51,8 @@
   }
   
   .footer .d-flex a:hover {
-    color: #fff;
+    /* color: #fff; */
+    color: blueviolet;
   }
   
   .footer .text-center p {
@@ -74,7 +68,7 @@
   }
   
   .footer .social-icons a:hover {
-    color: #fff;
+    color: blueviolet;
   }
   
   .footer .row-divider {
@@ -85,8 +79,8 @@
   .footer .overlay {
     content: "";
     /* background: rgba(255, 255, 255, 0.05); */
-    background-color: black;
-    position: absolute;
+    /* background-color: black; */
+    /* position: absolute; */
     top: 0;
     bottom: 0;
     left: 0;
@@ -94,10 +88,7 @@
     z-index: 1;
   }
   
-  .footer-content {
-    position: relative;
-    z-index: 2;
-  }
+
   
   @media (max-width: 768px) {
     .footer {

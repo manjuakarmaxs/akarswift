@@ -15,7 +15,7 @@ const Global = () => {
   }, []);
 
   return (
-    <Container fluid className="container my-5">
+    <Container fluid className="container my-5" style={{color:'white'}}>
       <h2 className="text-center mb-4" data-aos="fade-up">Global Network</h2>
       <Row className="mb-4" data-aos="fade-up">
         <Col md={6} className="text-center">

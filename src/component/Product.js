@@ -16,7 +16,7 @@ const Product = () => {
   return (
     <>
       <div className="container my-5">
-        <h1 className="text-center mb-4" data-aos="fade-up"><b>Products</b></h1>
+        <h1 className="text-center mb-4" data-aos="fade-up"><b style={{color:'white'}}>Products</b></h1>
         <div className="accordion" id="productAccordion">
 
           <div className="accordion-item" data-aos="fade-up">

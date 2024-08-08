@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Sustainability = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5" style={{color:'white'}}>
   <h2 className="text-center mb-4">Sustainability</h2>
   <p className="text-center mb-4"><b>Commitment to a Greener Future</b></p>
   <div id="sustainabilityCarousel" className="carousel slide" data-bs-ride="carousel">

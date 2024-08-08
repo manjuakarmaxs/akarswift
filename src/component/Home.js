@@ -1,5 +1,5 @@
 import React from 'react';
-import videoSrc from '../assets/bvid1.mp4'; // Replace with your video file path
+import videoSrc from '../assets/landing2.mp4'; // Replace with your video file path
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../component/Home.css';
 
