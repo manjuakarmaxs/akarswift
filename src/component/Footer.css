@@ -3,13 +3,12 @@
   background: black;
   color: white;
   padding: 40px 0;
-  /* position: relative; */
   overflow: hidden;
 }
 
-/* Ensure footer content does not obscure the button */
+
 .footer-content {
-  /* position: relative; */
+  
   z-index: 2;
 }
 
@@ -36,8 +35,7 @@
   }
   
   .footer .nav-link:hover {
-    color: #fff;
-    color: blueviolet;
+    color: #D48A00
   }
   
   .footer .list-unstyled li {
@@ -51,9 +49,9 @@
   }
   
   .footer .d-flex a:hover {
-    /* color: #fff; */
-    color: blueviolet;
-  }
+    color: #fff;
+    color: #D48A00
+  } 
   
   .footer .text-center p {
     margin: 0;
@@ -62,14 +60,53 @@
   }
   
   .footer .social-icons a {
-    color: #aaa;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     transition: color 0.3s ease;
   }
   
-  .footer .social-icons a:hover {
-    color: blueviolet;
-  }
+  .footer .social-icons .facebook {
+    color: white; 
+}
+
+.footer .footer-links:hover{
+  color: #D48A00;
+}
+
+
+.footer .social-icons .facebook:hover {
+    color: #3b5998; /* Facebook's brand color on hover */
+}
+
+.footer .social-icons .faX {
+    color: white; /* Initial color */
+}
+
+.footer .social-icons .faX:hover {
+  color: white
+
+  ;/* Twitter's brand color on hover */
+}
+
+.footer .social-icons .linkedin {
+    color: white; /* Initial color */
+}
+
+.footer .social-icons .linkedin:hover {
+    color: #0077b5; /* LinkedIn's brand color on hover */
+}
+
+.footer .social-icons .instagram {
+    color: white; /* Initial color */
+}
+
+.footer .social-icons .instagram:hover {
+  color: #D93F6C;
+}
+
+
+
+
+
   
   .footer .row-divider {
     border-top: 2px solid #444;

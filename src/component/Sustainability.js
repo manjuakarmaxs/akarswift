@@ -6,8 +6,23 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
+import  { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Sustainability = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Animation easing
+      once: false, // Whether animation should happen only once - while scrolling down
+      mirror: true, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
+
+
   return (
     <div className="container my-5" style={{color:'white'}}>
   <h2 className="text-center mb-4">Sustainability</h2>
@@ -21,7 +36,7 @@ const Sustainability = () => {
               <div className="sustainability-icon card-header">
                 <i className="bi bi-recycle"></i>
               </div>
-              <div className="sustainability-content card-body flex-grow-1">
+              <div className="sustainability-content card-body flex-grow-1" data-aos="fade-up">
                 <h5 className="card-title">Eco-friendly Packaging</h5>
                 <p className="card-text">
                   Utilizing biodegradable and recyclable materials to reduce waste and environmental impact.
@@ -37,7 +52,7 @@ const Sustainability = () => {
               <div className="sustainability-icon card-header">
                 <i className="bi bi-truck"></i>
               </div>
-              <div className="sustainability-content card-body flex-grow-1">
+              <div className="sustainability-content card-body flex-grow-1" data-aos="fade-up">
                 <h5 className="card-title">Green Logistics</h5>
                 <p className="card-text">
                   Implementing energy-efficient transportation methods to cut down carbon emissions.
@@ -56,7 +71,7 @@ const Sustainability = () => {
             <div className="sustainability-icon card-header">
               <i className="fas fa-leaf"></i>
             </div>
-              <div className="sustainability-content card-body flex-grow-1">
+              <div className="sustainability-content card-body flex-grow-1" data-aos="fade-up">
                 <h5 className="card-title">Sustainable Sourcing</h5>
                 <p className="card-text">
                   Ensuring that our products are sourced from environmentally responsible suppliers. 
@@ -70,7 +85,7 @@ const Sustainability = () => {
               <div className="sustainability-icon card-header">
                 <i className="bi bi-cloud-sun"></i>
               </div>
-              <div className="sustainability-content card-body flex-grow-1">
+              <div className="sustainability-content card-body flex-grow-1" data-aos="fade-up">
                 <h5 className="card-title">Carbon Footprint Reduction</h5>
                 <p className="card-text">
                   Investing in technologies and practices that minimize our carbon emissions. Our commitment to reducing our carbon footprint is central to our sustainability strategy.

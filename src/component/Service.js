@@ -8,8 +8,8 @@ const Service = () => {
     AOS.init({
       duration: 1000, // Animation duration
       easing: 'ease-in-out', // Animation easing
-      // once: true, // Whether animation should happen only once - while scrolling down
-      mirror: false // Whether elements should animate out while scrolling past them
+      once: false, // Whether animation should happen only once - while scrolling down
+      mirror: true // Whether elements should animate out while scrolling past them
     });
   }, []);
 
@@ -51,10 +51,10 @@ const Service = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="container my-5">
-        <div className="row g-3">
+      {/* </div> */}
+         
+      {/* <div className="container my-5"> */}
+      <div className="row g-3" style={{marginTop: '20px'}}>
           <div className="col-md-4" data-aos="fade-up">
             <div className="card equal-height-card">
               <div className="card-body">

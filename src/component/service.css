@@ -1,5 +1,7 @@
 .equal-height-card {
   height: 100%;
+
+  
 }
 
 .card-body {
@@ -7,12 +9,11 @@
   flex-direction: column;
   justify-content: space-between;
   font-style:normal;
- 
   
 }
 body{
   /* background-color: whitesmoke; */
-  background-color:beige ;
+  background-color:black ;
 }
 
 .h1{
@@ -31,10 +32,13 @@ body{
 }
 
 .card-body:hover{
-  box-shadow: 0 20px 20px grey;
+  /* box-shadow: 0 20px 20px grey; */
+  box-shadow:  0 8px 20px #D48A00;
+
 }
 
 
 .card-footer:hover{
-  box-shadow: 0 20px 20px grey;
+  /* box-shadow: 0 20px 20px grey; */
+  box-shadow: 0 8px 10px #D48A00
 }

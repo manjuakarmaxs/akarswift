@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import mapImage from '../assets/map.png';
+import mapImage from '../assets/map1.webp';
 
 const Global = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const Global = () => {
       <h2 className="text-center mb-4" data-aos="fade-up">Global Network</h2>
       <Row className="mb-4" data-aos="fade-up">
         <Col md={6} className="text-center">
-          <img src={mapImage} alt="Global Map" className="img-fluid" />
+          <img src={mapImage} width={"500px"} alt="Global Map" className="img-fluid" />
         </Col>
         <Col md={6}>
           <h4>Connecting Continents</h4>

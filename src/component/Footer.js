@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import   { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Footer.css'
-
+import { faX } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     
@@ -40,10 +40,11 @@ const Footer = () => {
               <li><i className="bi bi-envelope"></i> Email: info@akarmaxs.in</li>
             </ul>
             <div className="d-flex social-icons">
-              <a href="#" className="me-3"><FaFacebookF /></a>
-              <a href="#" className="me-3"><FaTwitter /></a>
-              <a href="#" className="me-3"><FaLinkedinIn /></a>
-              <a href="#"><FaInstagram /></a>
+              <a href="#" className="me-3 facebook"><FaFacebookF /></a>
+              {/* <a href="#" className="me-3 twitter" ><FaTwitter /></a> */}
+              <a href="#" className="me-3 faX"> <FontAwesomeIcon icon={faX} /></a>
+              <a href="#" className="me-3 linkedin" ><FaLinkedinIn /></a>
+              <a href="#" className="instagram"><FaInstagram /></a>
             </div>
           </div>
         </div>

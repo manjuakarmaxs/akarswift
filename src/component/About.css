@@ -1,121 +1,46 @@
-/* About.css */
-
-
-
-.text-container {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
-  border-radius: 8px; /* Rounded corners */
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 20px; /* Increase padding for better spacing */
-  color: white; /* White text color for contrast */
-  text-align: center; /* Center align text */
-  max-width: 600px; /* Set a max-width for the text container */
-  margin: 0 auto; /* Center the container */
+.hover-card {
+  height: 300px;
+  border-radius: 10px;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
 }
 
-.carousel-item img {
-  object-fit: cover; /* Ensures the image covers its container */
-  height: 400px; /* Consistent height for all images */
-  width: 100%; /* Ensure the image takes up full width */
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
 
+.hover-card:hover img {
+  opacity: 1;
+}
+
+.hover-card .card-img-overlay {
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.hover-card:hover .card-img-overlay {
+  /* background-color: rgba(0, 0, 139, 0.8); */
+  /* background-color:rgba(80, 0, 110, 0.8) */
+  background-color: rgba(212, 138, 0, 0.7);
   
+
 }
 
-
-
-.card-title {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  font-weight: bold;
+.hover-card .card-title,
+.hover-card .card-text {
+  color: #fff;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
-.card-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: justify;
+.hover-card:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-.carousel-inner {
-  max-width: 1000px;
-  margin: auto; /* Center the carousel in the container */
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: black; /* Change to your desired color */
-}
-
-.carousel-indicators .active {
-  background-color: blueviolet; /* Change to a darker shade if desired */
-}
-
-/* Responsive styles */
-@media (max-width: 992px) {
-  .carousel-item img {
-    height: 300px; /* Reduce height for smaller screens */
-  }
-
-  .card-title {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-  }
-
-  .card-text {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .text-container {
-    padding: 15px; /* Reduce padding for smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 200px; /* Further reduce height for very small screens */
-  }
-
-  .card-title {
-    font-size: 1.2rem; /* Adjust font size for very small screens */
-  }
-
-  .card-text {
-    font-size: 0.9rem; /* Adjust font size for very small screens */
-  }
-
-  .text-container {
-    padding: 10px; /* Further reduce padding for very small screens */
-  }
-
-  .carousel-item .d-flex {
-    flex-direction: column; /* Stack image and text vertically */
-  }
-
-  .text-container {
-    width: 100%; /* Ensure the text container takes up full width */
-    margin-top: 10px; /* Add some space between image and text */
-  }
-}
-
-/* Ensure text-container always has sufficient margin from the image on larger screens */
-@media (min-width: 992px) {
-  .carousel-item .d-flex {
-    align-items: center;
-  }
-
-  .carousel-item img {
-    margin-right: 20px; /* Maintain gap between image and text */
-  }
-
-  .text-container {
-    margin-top: 0; /* Remove top margin on larger screens */
-  }
-}
-
-
-
-
-
-
-
-
-
-
