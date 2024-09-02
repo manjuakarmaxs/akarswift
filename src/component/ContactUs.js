@@ -36,15 +36,19 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_5k45rh6', 'template_hva34u1', form.current, 'jk8J2etAg4NCjetGm')
-      .then((result) => {
-        setButtonText('Message Sent');
-        e.target.reset();
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
-      });
-  };
+    .then((result) => {
+      setButtonText('Message Sent');
+      e.target.reset();
 
+      // Reset the button text after 3 seconds
+      setTimeout(() => {
+        setButtonText('Send Message');
+      }, 3000); 
+    })
+    .catch((error) => {
+      console.error('Failed to send message:', error);
+    });
+};
   return (
     <div className="container my-5" style={{color:'white'}}>
       <div data-aos="fade-up">
