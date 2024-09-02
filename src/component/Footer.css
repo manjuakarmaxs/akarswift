@@ -60,8 +60,9 @@
   }
   
   .footer .social-icons a {
-    /* font-size: 1.5rem; */
+    font-size: 0.8rem;
     transition: color 0.3s ease;
+    padding: 0.5rem;
   }
   
   .footer .social-icons .facebook {
@@ -79,6 +80,8 @@
 
 .footer .social-icons .faX {
     color: white; /* Initial color */
+    
+    
 }
 
 .footer .social-icons .faX:hover {

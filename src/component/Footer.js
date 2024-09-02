@@ -40,11 +40,12 @@ const Footer = () => {
               <li><i className="bi bi-envelope"></i> Email: info@akarmaxs.in</li>
             </ul>
             <div className="d-flex social-icons">
+              
               <a href="#" className="me-3 facebook"><FaFacebookF /></a>
-              {/* <a href="#" className="me-3 twitter" ><FaTwitter /></a> */}
               <a href="#" className="me-3 faX"> <FontAwesomeIcon icon={faX} /></a>
               <a href="#" className="me-3 linkedin" ><FaLinkedinIn /></a>
               <a href="#" className="instagram"><FaInstagram /></a>
+              
             </div>
           </div>
         </div>
