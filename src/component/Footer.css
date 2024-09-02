@@ -154,3 +154,41 @@
     color: blueviolet;
     cursor: 'pointer'
   }
+
+
+
+
+
+
+
+  /* Responsive Design */
+
+/* Adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .footer .d-flex {
+    justify-content: center;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 576px) {
+  .footer h5 {
+    font-size: 1.3rem; /* Smaller font size for headings */
+  }
+
+  .footer p {
+    font-size: 0.85rem; /* Smaller font size for paragraphs */
+  }
+
+  .footer .d-flex a {
+    font-size: 1rem; /* Smaller font size for social icons */
+  }
+}

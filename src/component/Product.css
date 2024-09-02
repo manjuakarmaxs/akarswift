@@ -1,25 +1,54 @@
+/* Base Styles for Accordion Button */
 .accordion-button {
-  background-color:#ecf0f1;; /* Change the background color */
-  color: black; /* Change the text color */
-  border-color: aliceblue; /* Change the border color */
+  background-color: #ecf0f1; /* Background color */
+  color: black; /* Text color */
+  border-color: aliceblue; /* Border color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-/* Style for the accordion button when it is active (expanded) */
+/* Style for the Accordion Button When Active (Expanded) */
 .accordion-button:not(.collapsed) {
-  background-color: aliceblue; /* Change the background color when expanded */
-  color: black; /* Change the text color when expanded */
-  border-color: aliceblue; /* Change the border color when expanded */
+  background-color: aliceblue; /* Background color when expanded */
+  color: black; /* Text color when expanded */
+  border-color: aliceblue; /* Border color when expanded */
 }
 
-/* Style for the accordion button on hover */
+/* Style for the Accordion Button on Hover */
 .accordion-button:hover {
-  background-color: aliceblue; /* Change the background color on hover */
-  color: black; /* Change the text color on hover */
+  background-color: aliceblue; /* Background color on hover */
+  color: black; /* Text color on hover */
 }
 
-
-.card-body ,p ,ul {
-  font-weight: 400;
+/* Base Styles for Card Body, Paragraph, and Unordered List */
+.card-body, p, ul {
+  font-weight: 400; /* Font weight */
+  margin: 0; /* Ensure consistent spacing */
 }
 
+/* Responsive Adjustments */
 
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 1rem; /* Adjust font size for readability */
+    padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .card-body, p, ul {
+    font-size: 0.95rem; /* Adjust font size */
+    padding: 0.5rem; /* Add padding for better spacing */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 0.9rem; /* Further adjust font size */
+    padding: 0.5rem 0.75rem; /* Further adjust padding */
+  }
+
+  .card-body, p, ul {
+    font-size: 0.9rem; /* Further adjust font size */
+    padding: 0.5rem; /* Maintain padding for small screens */
+  }
+}

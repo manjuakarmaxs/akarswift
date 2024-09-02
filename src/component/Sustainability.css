@@ -56,3 +56,52 @@
   color: white; /* Sets the color of the icon */
   font-size: 1.5rem; /* Optional: adjust icon size if needed */
 }
+
+
+
+
+/* Responsive Adjustments */
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .sustainability-item {
+    flex-direction: column; /* Stack icon and content vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .sustainability-icon {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add margin below the icon */
+  }
+
+  .sustainability-content h5 {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  .sustainability-content p {
+    font-size: 0.95rem; /* Adjust font size */
+  }
+
+  .card-body {
+    padding: 0.75rem; /* Adjust padding */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .sustainability-icon {
+    font-size: 1.5rem; /* Further reduce icon size */
+  }
+
+  .sustainability-content h5 {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .sustainability-content p {
+    font-size: 0.85rem; /* Further reduce font size */
+  }
+
+  .card-body {
+    padding: 0.5rem; /* Further adjust padding */
+  }
+}

@@ -31,3 +31,52 @@ button.btn:hover {
 }
 
 
+/* Responsive Design */
+
+/* Adjustments for tablets and smaller laptops */
+@media (max-width: 992px) {
+  .container {
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+  }
+
+  .form-label {
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+
+  button.btn {
+    padding: 0.7rem 1.3rem; /* Adjust button padding */
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem; /* Further reduced padding for mobile */
+  }
+
+  .form-label {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  button.btn {
+    padding: 0.65rem 1.2rem; /* Further adjust button padding */
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem; /* Minimal padding for very small screens */
+  }
+
+  .form-label {
+    font-size: 0.85rem; /* Further reduced font size */
+  }
+
+  button.btn {
+    padding: 0.6rem 1rem; /* Minimal padding for buttons */
+    font-size: 0.85rem; /* Further reduced font size */
+  }
+}
