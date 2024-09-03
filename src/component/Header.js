@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
   return (
     <> 
-  <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: 'black', fontWeight: 'bold' }}>    
+  <nav className="navbar navbar-expand-lg navbar-dark " style={{ background: 'black', fontWeight: 'bold' }}>    
   <div className="container-fluid">
     <img src={logo} alt="Company Logo" className="logo" />
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@ const Header = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav ms-auto">
-        <li className="nav-item mx-3">
+        <li className="nav-item mx-1">
           <Link className="nav-link navbar-brand" to="about" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>About Us</Link>
         </li>
         <li className="nav-item mx-1">
