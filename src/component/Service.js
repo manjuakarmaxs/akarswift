@@ -60,7 +60,9 @@ const Service = () => {
               <div className="card-body">
                 <h5 className="card-title">Customs Brokerage</h5>
                 <p className="card-text">
-                  Navigating the complexities of customs regulations to expedite your shipments.
+                
+                  Our customs brokerage services are designed to simplify the intricate process of international trade. We ensure your shipments clear customs smoothly and efficiently,
+                   avoiding delays and compliance issues. Our expert team stays up-to-date with the latest customs regulations and documentation requirements to provide seamless import and export services.
                 </p>
               </div>
             </div>
@@ -70,7 +72,9 @@ const Service = () => {
               <div className="card-body">
                 <h5 className="card-title">Supply Chain Management</h5>
                 <p className="card-text">
-                  Optimizing your supply chain for maximum efficiency and cost-effectiveness.
+                Optimizing your supply chain for maximum efficiency and
+                cost-effectiveness. Effective supply chain management is essential to ensure seamless operations, reduce costs, and maintain high levels of customer satisfaction. 
+                  Our approach to supply chain management focuses on enhancing operational efficiency, reducing lead times, and driving cost-effectiveness throughout the entire supply chain network.
                 </p>
               </div>
             </div>
@@ -80,7 +84,7 @@ const Service = () => {
               <div className="card-body">
                 <h5 className="card-title">Logistics and Transportation</h5>
                 <p className="card-text">
-                  Providing end-to-end logistics solutions, including warehousing and transportation.
+                  Providing end-to-end logistics solutions, including warehousing and transportation.we offer comprehensive logistics and transportation services to ensure your goods move efficiently from origin to destination. Our integrated solutions streamline your supply chain, providing reliable and timely delivery while optimizing costs.
                 </p>
               </div>
             </div>

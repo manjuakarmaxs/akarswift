@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,11 +21,11 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-              <li><Link className="footer-links" to="about" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer'}}>About Us</Link></li>
-              <li><Link className="footer-links" to="service" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Services</Link></li>
-              <li><Link className="footer-links" to="products" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Products</Link></li>
-              <li><Link className="footer-links" to="careers" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Careers</Link></li>
-              <li><Link className="footer-links" to="contact" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Contact Us</Link></li>
+              <li><NavLink className="footer-links" to="/about" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer'}}>About Us</NavLink></li>
+              <li><NavLink className="footer-links" to="/services" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Services</NavLink></li>
+              <li><NavLink className="footer-links" to="/products" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Products</NavLink></li>
+              <li><NavLink className="footer-links" to="/careers" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Careers</NavLink></li>
+              <li><NavLink className="footer-links" to="/contact" spy={true} activeClass="active" offset={-70} smooth={true} duration={500} style={{ cursor: 'pointer' }}>Contact Us</NavLink></li>
             </ul>
           </div>
           <div className="col-md-4 mb-4">

@@ -1,29 +1,32 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../component/ContactUs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import emailjs from 'emailjs-com';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import axios from 'axios';
 
 const ContactUs = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
       easing: 'ease-in-out', // Animation easing
-      once: false, // Whether animation should happen only once - while scrolling down
+      once: false, // Whether animation should happen only once
       mirror: true, // Whether elements should animate out while scrolling past them
     });
   }, []);
 
   const regx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const [email, setEmail] = useState(''); // Corrected useState usage
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [buttonText, setButtonText] = useState('Send Message');
-  
+  const [formData, setFormData] = useState({
+    name: '',
+    message: ''
+  });
+
   const checkEmail = (e) => {
     const value = e.target.value;
-    setEmail(value); // Now setEmail will correctly update the email state
+    setEmail(value);
     if (regx.test(value) === false) {
       setError('Please enter a valid email');
     } else {
@@ -31,32 +34,42 @@ const ContactUs = () => {
     }
   };
 
-  const form = useRef();
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_5k45rh6', 'template_hva34u1', form.current, 'jk8J2etAg4NCjetGm')
-    .then((result) => {
-      setButtonText('Message Sent');
-      e.target.reset();
 
-      // Reset the button text after 3 seconds
-      setTimeout(() => {
-        setButtonText('Send Message');
-      }, 3000); 
-    })
-    .catch((error) => {
+    if (error) return; // Stop if there's an error in the email
+
+    try {
+      const response = await axios.post('http://localhost:3001/send-email', {
+        name: formData.name,
+        email: email,
+        message: formData.message,
+      });
+
+      if (response.status === 200) {
+        setButtonText(<b style={{ color: 'red' }}>Message Sent</b>);
+        e.target.reset();
+        setTimeout(() => {
+          setButtonText('Send Message');
+        }, 3000);
+      }
+    } catch (error) {
       console.error('Failed to send message:', error);
-    });
-};
+    }
+  };
+
   return (
-    <div className="container my-5" style={{color:'white'}}>
+    <div className="container my-5" style={{ color: 'white' }}>
       <div data-aos="fade-up">
         <h2 className="text-center mb-4">Contact Us</h2>
         <div className="row">
           <div className="col-md-6">
             <h3 className="text-center mb-4">Contact Form</h3>
-            <form ref={form} onSubmit={sendEmail}>
+            <form onSubmit={sendEmail}>
               <div className="row">
                 <div className="col-md-12 mb-3">
                   <label htmlFor="name" className="form-label">Name</label>
@@ -67,6 +80,7 @@ const ContactUs = () => {
                     id="name"
                     placeholder="Your Name"
                     required
+                    onChange={handleInputChange}
                   />
                 </div>
                 <div className="mb-3">
@@ -92,6 +106,7 @@ const ContactUs = () => {
                   rows="4"
                   placeholder="Your Message"
                   required
+                  onChange={handleInputChange}
                 ></textarea>
               </div>
               <div className="d-flex justify-content-center">

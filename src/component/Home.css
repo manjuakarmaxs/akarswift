@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-/* Video Background Styling */
+/* Default Styling */
 .video-background {
   position: absolute;
   top: 0;
@@ -17,7 +17,6 @@
   z-index: -1;
 }
 
-/* Text Overlay Styling */
 .text-overlay {
   position: absolute;
   top: 0;
@@ -27,10 +26,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: center;
 }
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .text-overlay {
+    padding: 15px;
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
+  }
+}
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .text-overlay {
+    padding: 8px;
+    font-size: 0.7rem; /* Further adjust text size for very small screens */
+  }
+}
+
+/* For larger screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .text-overlay {
+    padding: 30px; /* Increase padding for larger screens */
+    font-size: 1.2rem; /* Increase text size for larger screens */
+  }
+}
+
 
 /* Mission Heading Styling */
 .mission h3 {
@@ -53,6 +77,11 @@
 /* Responsive Adjustments */
 
 /* Adjustments for Tablets and Smaller Devices */
+
+
+
+
+
 @media (max-width: 992px) {
   .mission h3 {
     font-size: 2rem; /* Reduce heading size */

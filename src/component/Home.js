@@ -3,6 +3,15 @@ import videoSrc from '../assets/landing2.mp4'; // Replace with your video file p
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../component/Home.css'; // Make sure to apply the CSS here
 
+
+import About from './About';
+import Service from './Service';
+import Products from './Product';
+import GlobalNetwork from './Global';
+import Sustainability from './Sustainability';
+import Careers from './Careers';
+import Contact from './ContactUs';
+
 const Home = () => {
   return (
     <>
@@ -24,6 +33,15 @@ const Home = () => {
           </section>
         </div>
       </div>
+
+
+<About/>
+<Service/>
+<Products/>
+<GlobalNetwork/>
+<Sustainability/>
+<Careers/>
+<Contact/>
     </>
   );
 };
