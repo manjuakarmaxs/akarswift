@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
 import './Header.css';
 
 const Header = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const handleLinkClick = () => {
+    if (isNavOpen) {
+      setIsNavOpen(false); // Close the navbar when a link is clicked
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: 'black' }}>
       <div className="container-fluid">
-        <img src={logo} alt="Company Logo" className="logo" />
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <NavLink to="/" className="navbar-brand">
+          <img src={logo} alt="Company Logo" className="logo" />
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleNavToggle}
+          aria-controls="navbarText"
+          aria-expanded={isNavOpen}
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarText">
+        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarText">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item mx-1">
               <NavLink
@@ -22,6 +43,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Home
               </NavLink>
@@ -35,6 +57,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 About Us
               </NavLink>
@@ -48,6 +71,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Services
               </NavLink>
@@ -61,6 +85,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Products
               </NavLink>
@@ -74,6 +99,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Global Network
               </NavLink>
@@ -87,6 +113,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Sustainability
               </NavLink>
@@ -100,6 +127,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Careers
               </NavLink>
@@ -113,6 +141,7 @@ const Header = () => {
                   fontWeight: isActive ? "bold" : "normal",
                   color: isActive ? "#D48A00" : "white",
                 })}
+                onClick={handleLinkClick}
               >
                 Contact Us
               </NavLink>

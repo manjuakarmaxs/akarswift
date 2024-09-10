@@ -25,6 +25,7 @@ function App() {
         <Route path="/sustainability" element={<Sustainability />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/scroll" element={<ScrollTopButton />} />
       </Routes>
       <Footer />
       <ScrollTopButton />
