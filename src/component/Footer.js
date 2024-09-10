@@ -26,7 +26,7 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li>
                   <NavLink 
-                    className="footer-links" 
+                    className="nav-link footer-links" 
                     to="/about"
                     onClick={scrollToTop}
                     style={({ isActive }) => ({
@@ -39,7 +39,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink 
-                    className="footer-links" 
+                    className="nav-link footer-links" 
                     to="/services"
                     onClick={scrollToTop}
                     style={({ isActive }) => ({
@@ -52,7 +52,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink 
-                    className="footer-links" 
+                    className="nav-link footer-links" 
                     to="/products"
                     onClick={scrollToTop}
                     style={({ isActive }) => ({
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink 
-                    className="footer-links" 
+                    className="nav-link footer-links" 
                     to="/careers"
                     onClick={scrollToTop}
                     style={({ isActive }) => ({
@@ -78,7 +78,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink 
-                    className="footer-links" 
+                    className="nav-link footer-links" 
                     to="/contact"
                     onClick={scrollToTop}
                     style={({ isActive }) => ({
